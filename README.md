@@ -28,7 +28,7 @@ The animation method I chose is time-driven (time-based). The line colours chang
   let progress = phase / colorChangePeriod;
 
   let c;
-  let progress1 = 1 / 6; // 每个阶段的进度比例
+  let progress1 = 1 / 6;
   let progress2 = 2 / 6;
   let progress3 = 3 / 6;
   let progress4 = 4 / 6;
@@ -47,8 +47,6 @@ The animation method I chose is time-driven (time-based). The line colours chang
    ```
   function getDynamicColor(col) {
   let c = getCurrentTransitionColor();
-
-  // 在原始颜色基础上叠加动态颜色
   let r = lerp(red(col), red(c), 0.5);
   let g = lerp(green(col), green(c), 0.5);
   let b = lerp(blue(col), blue(c), 0.5);
@@ -73,3 +71,17 @@ The animation method I chose is time-driven (time-based). The line colours chang
  }
 
  ```
+
+**Inspiration for the development of this project:**
+
+![image3](assets/blossom_vincent-van-gogh__39161.jpg)
+
+Almond Blossoms *Vincent van Gogh*
+  
+Vincent van Gogh's painting techniques and colour choices.
+
+![image4](assets/parallax-dots-5.png)
+
+The following code was referenced during the creation process
+  
+[Link to ***Happy Coding - p5.js Creating Classes: Parallax Dots*** page](https://happycoding.io/tutorials/p5js/creating-classes/parallax-dots)
